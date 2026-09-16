@@ -3,12 +3,12 @@ import '../core/constants/app_constants.dart';
 import '../core/services/local_db_service.dart';
 
 class LocaleProvider extends ChangeNotifier {
-  Locale _locale = const Locale('bn');
+  Locale _locale = const Locale('en');
 
   LocaleProvider() {
     final savedLanguage = LocalDbService.settingsBox.get(
       AppConstants.prefLanguage,
-      defaultValue: 'bn',
+      defaultValue: 'en',
     );
 
     _locale = Locale(savedLanguage == 'en' ? 'en' : 'bn');
