@@ -1,0 +1,47 @@
+{
+  "rules": {
+    "users": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid",
+
+        "profile": {
+          ".validate": "newData.hasChildren(['uid', 'name', 'email', 'createdAt'])"
+        },
+
+        "customers": {
+          "$customerId": {
+            ".validate": "newData.hasChildren(['id', 'name', 'createdAt', 'updatedAt'])",
+            "name": {
+              ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length < 100"
+            },
+            "balancePoysha": {
+              ".validate": "newData.isNumber()"
+            }
+          }
+        },
+
+        "transactions": {
+          "$transactionId": {
+            ".validate": "newData.hasChildren(['id', 'customerId', 'type', 'amountPoysha', 'date', 'createdAt', 'updatedAt'])",
+            "type": {
+              ".validate": "newData.val() === 'due' || newData.val() === 'payment'"
+            },
+            "amountPoysha": {
+              ".validate": "newData.isNumber() && newData.val() >= 0"
+            }
+          }
+        },
+
+        "settings": {
+          ".validate": "true"
+        }
+      }
+    },
+
+    "$other": {
+      ".read": false,
+      ".write": false
+    }
+  }
+}

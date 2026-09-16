@@ -1,0 +1,12 @@
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# Sensitive Firebase config - do not commit your real credentials
+android/app/google-services.json
+lib/firebase_options.dart
+
+*.iml
+.idea/

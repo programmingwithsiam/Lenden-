@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "467883410916",
+    "firebase_url": "https://lenden-215f1-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "lenden-215f1",
+    "storage_bucket": "lenden-215f1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467883410916:android:b65a972c95e4b757d473f1",
+        "android_client_info": {
+          "package_name": "com.example.amar_khata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467883410916-5dp057r2ecavv38aaf6qfb4nakeh1e8s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.amar_khata",
+            "certificate_hash": "998d4382b563bd0072e3cb67c21d67f9bacac4c0"
+          }
+        },
+        {
+          "client_id": "467883410916-gm457d692jm3u5buj3q6bk9imq6bstt6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCR-Xh_-7xlVJpXz1GpzsoTDk9IJDkarbk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467883410916-gm457d692jm3u5buj3q6bk9imq6bstt6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

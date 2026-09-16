@@ -1,0 +1,75 @@
+name: amar_khata
+description: "আমার খাতা - Digital Ledger App for Shopkeepers (Tally Khata)"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  firebase_database: ^11.1.4
+  google_sign_in: ^6.2.1
+
+  # Local offline database
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # State management
+  provider: ^6.1.2
+
+  # Connectivity (detect online/offline)
+  connectivity_plus: ^6.0.5
+
+  # Utilities
+  intl: ^0.20.2
+  uuid: ^4.4.2
+  shared_preferences: ^2.3.2
+  package_info_plus: ^8.0.2
+
+  # UI
+  cupertino_icons: ^1.0.8
+  fl_chart: ^0.69.0
+  flutter_slidable: ^3.1.1
+  shimmer: ^3.0.0
+
+  # Share / PDF / links
+  share_plus: ^10.0.2
+  pdf: ^3.11.1
+  path_provider: ^2.1.4
+  open_filex: ^4.5.0
+  url_launcher: ^6.3.1
+
+  # Notifications (local reminders)
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4
+
+  # Phone validation
+  path: ^1.9.0
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  generate: true
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  # If you add custom Bengali fonts later, declare them here:
+  # fonts:
+  #   - family: HindSiliguri
+  #     fonts:
+  #       - asset: assets/fonts/HindSiliguri-Regular.ttf
+  #       - asset: assets/fonts/HindSiliguri-Bold.ttf
+  #         weight: 700
